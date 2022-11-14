@@ -1,0 +1,577 @@
+/* reset */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenedor{
+    height: 100vh;
+}
+
+    /* estilos del body */
+
+body{
+    background-color: white;
+}
+
+    /* Estilos de HOME */
+
+    /* HEADER */
+
+.logo{
+    width: 100px;
+    height: 100px;
+}
+
+header{
+    background-color: olive;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 15px;
+}
+
+header nav ul{
+    list-style: none;
+    display: flex;
+    gap: 0.7rem;
+}
+
+header nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+.a-color{
+    color: black;
+}
+
+    /* MAIN */
+
+.la-quinta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    padding-top: 1.3rem;
+    gap: 1rem;
+}
+
+.la-quinta img{
+    width: 90%;
+}
+
+.la-quinta h1{
+    color:#525215;
+    text-shadow: 1px 1px 1px black;
+    font-family: 'Crimson Text', serif;
+    font-size: 40px;
+}
+
+.la-quinta p{
+    text-align: center;
+    color: #5c483a;
+    font-size: 1.2rem;
+}
+
+    /* FOOTER */
+
+
+footer nav ul{
+    background-color: olive;
+    display: flex;
+    list-style: none;
+
+}
+
+footer nav ul a{
+    display: flex;
+    justify-content: center;
+    padding: 0.7rem;
+}
+
+.redes{
+    width: 20%;
+}
+
+    /* MQ */
+
+@media screen and (min-width:1024px){
+
+    /* MAIN */
+
+    .la-quinta{
+        height: 70vh;
+        display: grid;
+        grid-template-columns:1fr 1fr ;
+        grid-template-rows:1fr 1fr ;
+        grid-template-areas: 
+            "img main-h1"
+            "img p";
+        justify-content: center;
+        align-items: center;
+    }
+
+    .la-quinta img{
+        grid-area: img;
+        width: 90%;
+        margin-left: 2rem;
+    }
+
+    .la-quinta h1{
+        grid-area: main-h1;
+        text-align: center;
+        text-shadow: 1px 1px 1px black;
+    }
+
+    .la-quinta p{
+        grid-area: p;
+    }
+
+    .redes{
+        width: 15%; 
+    }
+}
+
+    /* MQ - Pantalla escritorio */
+
+@media screen and (min-width:1200px){
+
+    /* Animaciones de los botones del menu */
+
+    .animacion-menu:hover{
+        background-color: #525215;
+        box-shadow: 2px 2px 3px black;
+        transform: scale(1.1);
+    }
+
+    .animacion-menu{
+        transition: 0s;
+    }
+
+    .a-color:hover{
+        color: white;
+    }
+
+    .menu{
+        gap: 1.5rem;
+    }
+
+    /* MAIN */
+
+    .la-quinta{
+        height: 70vh;
+        display: grid;
+        grid-template-columns:1fr 1fr ;
+        grid-template-rows:1fr 1fr ;
+        grid-template-areas: 
+            "img main-h1"
+            "img p";
+        justify-content: center;
+        align-items: center;
+        }
+
+    .la-quinta img{
+        grid-area: img;
+        width: 80%;
+        padding-bottom: 1.5rem;
+    }
+
+    .la-quinta h1{
+        grid-area: main-h1;
+        margin-right: 4rem;
+        text-align: center;
+        text-shadow: 1px 1px 1px black;
+    }
+
+    .la-quinta p{
+        grid-area: p;
+        margin-right: 3rem;
+        font-size: 1.3rem;
+    }
+
+    /*Animaciones del footer*/
+
+    .redes:hover{
+        filter: drop-shadow(1px 1px 2px black);
+        transform:scale(1.1)
+    }
+
+    .redes{
+        width: 10%; 
+    }
+}
+
+
+
+    /* Estilos de SERVICIOS */
+
+.servicios{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.servicio-uno{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    background-color:#dbbf6b ;
+    width: 80%;
+    text-align: center;
+    font-size: 18px;
+    padding: 1.5rem;
+    border-radius: 20px;
+}
+
+.sala{
+    width: 25%;
+}
+
+.servicio-dos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    background-color:#dbbf6b ;
+    width: 80%;
+    text-align: center;
+    font-size: 18px;
+    padding: 1.5rem;
+    border-radius: 20px;
+}
+
+.comedor{
+    width: 25%;
+}
+
+.servicio-tres{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    background-color:#dbbf6b ;
+    width: 80%;
+    text-align: center;
+    font-size: 18px;
+    padding: 1.5rem;
+    border-radius: 20px;
+}
+
+.estufa{
+    width: 25%;
+}
+
+.servicio-cuatro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    background-color:#dbbf6b ;
+    width: 80%;
+    text-align: center;
+    font-size: 18px;
+    padding: 1.5rem;
+    border-radius: 20px;
+}
+
+.cama{
+    width: 25%;
+}
+
+.servicio-cinco{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    background-color:#dbbf6b ;
+    width: 80%;
+    text-align: center;
+    font-size: 18px;
+    padding: 1.5rem;
+    border-radius: 20px;
+}
+
+.tv{
+    width: 25%;
+}
+
+.servicio-seis{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    background-color:#dbbf6b ;
+    width: 80%;
+    text-align: center;
+    font-size: 18px;
+    padding: 1.5rem;
+    border-radius: 20px;
+}
+
+.parking{
+    width: 25%;
+}
+
+.servicio-siete{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    background-color:#dbbf6b ;
+    width: 80%;
+    text-align: center;
+    font-size: 18px;
+    padding: 1.5rem;
+    border-radius: 20px;
+}
+
+.parrilla{
+    width: 25%;
+}
+
+.servicio-ocho{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    background-color:#dbbf6b ;
+    width: 80%;
+    text-align: center;
+    font-size: 18px;
+    padding: 1.5rem;
+    border-radius: 20px;
+}
+
+.fut-tennis{
+    width: 25%;
+}
+
+.servicio-nueve{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    background-color:#dbbf6b ;
+    width: 80%;
+    text-align: center;
+    font-size: 18px;
+    padding: 1.5rem;    
+    border-radius: 20px;    
+}
+
+.piscina{
+    width: 25%;
+}
+
+    /* MQ - SERVICIOS */ 
+
+
+@media screen and (min-width:1024px){
+
+    /* Servicios - MAIN */
+
+    .servicios{
+        display: grid;
+        grid-template-columns:1fr 1fr 1fr;
+        grid-template-rows:1fr 1fr 1fr ;
+
+        grid-template-areas: 
+        "servicio-uno servicio-dos servicio-tres"
+        "servicio-cuatro servicio-cinco servicio-seis"
+        "servicio-siete servicio-ocho servicio-nueve";
+        justify-content: center;
+        align-items: center;
+        padding: 3rem 0 3rem 3rem;
+    }
+
+    /* Animaciones del main */
+
+    .servicio-uno{
+        grid-area: servicio-uno;
+        font-size: 1rem;
+        transition: 0.1s;
+       
+    }
+
+    .servicio-uno:hover{
+        transform: scale(1.1);
+        transition: 0.2s;
+        box-shadow: 2px 2px 3px black;
+    }
+
+    .servicio-dos{
+        grid-area: servicio-dos;
+        font-size: 1rem;
+        transition: 0.1s;
+    }
+
+    .servicio-dos:hover{
+        transform: scale(1.1);
+        transition: 0.2s;
+        box-shadow: 2px 2px 3px black;
+    }
+
+    .servicio-tres{
+        grid-area: servicio-tres;
+        font-size: 1rem;
+        transition: 0.1s;
+    }
+
+    .servicio-tres:hover{
+        transform: scale(1.1);
+        transition: 0.2s;
+        box-shadow: 2px 2px 3px black;
+    }
+
+    .servicio-cuatro{
+        grid-area: servicio-cuatro;
+        font-size: 1rem;
+        transition: 0.1s;
+    }
+
+    .servicio-cuatro:hover{
+        transform: scale(1.1);
+        transition: 0.2s;
+        box-shadow: 2px 2px 3px black;
+    }
+
+    .servicio-cinco{
+        grid-area: servicio-cinco;
+        font-size: 1rem;
+        transition: 0.1s;
+    }
+
+    .servicio-cinco:hover{
+        transform: scale(1.1);
+        transition: 0.2s;
+        box-shadow: 2px 2px 3px black;
+    }
+
+    .servicio-seis{
+        grid-area: servicio-seis;
+        font-size: 1rem;
+        transition: 0.1s;
+    }
+
+    .servicio-seis:hover{
+        transform: scale(1.1);
+        transition: 0.2s;
+        box-shadow: 2px 2px 3px black;
+    }
+
+    .servicio-siete{
+        grid-area: servicio-siete;
+        font-size: 1rem;
+        transition: 0.1s;
+    }
+
+    .servicio-siete:hover{
+        transform: scale(1.1);
+        transition: 0.2s;
+        box-shadow: 2px 2px 3px black;
+    }
+
+    .servicio-ocho{
+        grid-area: servicio-ocho;
+        font-size: 1rem;
+        transition: 0.1s;
+    }
+
+    .servicio-ocho:hover{
+        transform: scale(1.1);
+        transition: 0.2s;
+        box-shadow: 2px 2px 3px black;
+    }
+
+    .servicio-nueve{
+        grid-area: servicio-nueve;
+        font-size: 1rem;
+        transition: 0.1s;
+    }
+
+    .servicio-nueve:hover{
+        transform: scale(1.1);
+        transition: 0.2s;
+        box-shadow: 2px 2px 3px black;
+    }
+}
+
+    /* UBICACION */
+
+.ubicacion{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    padding: 1rem;
+    padding-inline: 2rem;
+}
+
+.mapa1{
+    padding: 1rem 6rem 1rem 6rem; 
+}
+
+.p-mapa{
+    text-align: center;
+    color: #5c483a;
+    font-size: 1rem;
+}
+
+    /* MQ - Ubicacion */
+
+@media screen and (min-width:1024px) {
+    .ubicacion{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .mapa1{
+        width: 500px;
+        height: 400px;
+        padding: 1rem
+    }
+
+    .p-mapa{
+        width: 500px;
+        padding: 2rem;
+        font-size: 1.1rem;
+    }
+
+}
+
+@media screen and (min-width:1200px) {
+    .mapa1{
+        width: 600px;
+        height: 500px;
+        padding: 1rem
+    }
+
+    .p-mapa{
+        width: 600px;
+        padding: 2rem;
+        font-size: 1.3rem;
+    }
+}
+
+
+/* FOTOS */
+
+.carrusel{
+    padding: 3rem;
+    display: flex;
+    justify-content: center;
+    
+    
+}
+
+
+
+
+
