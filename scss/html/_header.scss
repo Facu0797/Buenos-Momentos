@@ -1,0 +1,29 @@
+/* HEADER */
+
+header{
+    background-color: $color-principal;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 15px;
+    .logo{
+        width: 100px;
+        height: 100px;
+    }
+    nav{
+        ul{
+            list-style: none;
+            display: flex;
+            gap: 0.7rem;
+            li{
+                a{
+                    color: white;
+                    text-decoration: none;
+                    .a-color{
+                        color: black;
+                    }
+                }
+            }
+        }
+    }
+}

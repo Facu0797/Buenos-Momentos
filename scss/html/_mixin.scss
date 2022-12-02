@@ -1,0 +1,32 @@
+@mixin flex-column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@mixin grid-servicios {
+    display: grid;
+        grid-template-columns:1fr 1fr 1fr;
+        grid-template-rows:1fr 1fr 1fr ;
+
+        grid-template-areas: 
+        "servicio-uno servicio-dos servicio-tres"
+        "servicio-cuatro servicio-cinco servicio-seis"
+        "servicio-siete servicio-ocho servicio-nueve";
+        justify-content: center;
+        align-items: center;
+        padding: 3rem 0 3rem 3rem;
+}
+
+@mixin servicio{
+    font-size: 1rem;
+    transition: 0.1s;
+}
+    
+@mixin servicio-hover{
+    transform: scale(1.1);
+    transition: 0.2s;
+    box-shadow: 2px 2px 3px black;
+}
+
+

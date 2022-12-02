@@ -1,0 +1,49 @@
+/* MAIN */
+
+.la-quinta{
+    @include flex-column;
+    padding: 1rem;
+    padding-top: 1.3rem;
+    gap: 1rem;
+    img{
+        width: 90%;
+    }
+    h1{
+        color: $color-secundario;
+        text-shadow: 1px 1px 1px black;
+        font-family: 'Crimson Text', serif;
+        font-size: 45px;
+        font-family: 'Roboto', sans-serif;
+        font-family: 'Unna', serif;
+    }
+    p{
+        text-align: center;
+        color: $color-texto;
+        position: relative;
+        font-size: 1.4rem;
+        font-family: 'Roboto', sans-serif;
+        font-family: 'Unna', serif;
+    }
+}
+
+/* FOOTER */
+
+footer{
+    nav{
+        ul{
+            background-color: $color-principal;
+            display: flex;
+            list-style: none;
+            li{
+                a{
+                    display: flex;
+                    justify-content: center;
+                    padding: 0.7rem;
+                    .redes{
+                        width: 20%;
+                    }
+                }
+            }
+        }
+    }
+}

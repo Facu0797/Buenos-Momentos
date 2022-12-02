@@ -1,0 +1,64 @@
+/* SERVICIOS */
+
+main{
+    .servicios{
+        @include flex-column;
+        height: 100%;
+        gap: 2rem;
+        padding: 2rem;
+        .servicio-uno{
+            @extend %servicios;
+            .sala{
+                width: 25%;
+            }
+        }
+        .servicio-dos{
+            @extend %servicios;
+            .comedor{
+                width: 25%;
+            }
+        }
+        .servicio-tres{
+            @extend %servicios;
+            .estufa{
+                width: 25%;
+            }
+        }
+        .servicio-cuatro{
+            @extend %servicios;
+            .cama{
+                width: 25%;
+            }
+        }
+        .servicio-cinco{
+            @extend %servicios;
+            .tv{
+                width: 25%;
+            }
+        }
+        .servicio-seis{
+            @extend %servicios;
+            .parking{
+                width: 25%;
+            }
+        }
+        .servicio-siete{
+            @extend %servicios;
+            .parrilla{
+                width: 25%;
+            }
+        }
+        .servicio-ocho{
+            @extend %servicios;
+            .fut-tennis{
+                width: 25%;
+            }
+        }
+        .servicio-nueve{
+            @extend %servicios; 
+            .piscina{
+                width: 25%;
+            }
+        }
+    }
+}

@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Unna:wght@400;700&display=swap');
+
+/* RESET */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import "./html/variables";
+
+@import "./html/mixin";
+@import "./html/body";
+@import "./html/header";
+@import "./html/home";
+@import "./html/servicios";
+@import "./html/extend";
+@import "./html/ubicacion";
+@import "./html/contactanos";
+
+@import "./html/mq";

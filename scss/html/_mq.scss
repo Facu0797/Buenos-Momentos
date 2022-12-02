@@ -1,0 +1,282 @@
+/* MQ HOME - TABLET */
+
+@media screen and (min-width:768px){
+
+    /* MAIN */
+
+    .la-quinta{
+        height: 60vh;
+        display: grid;
+        grid-template-columns:1fr 1fr ;
+        grid-template-rows:1fr 1fr ;
+        grid-template-areas: 
+            "img main-h1"
+            "img p";
+        justify-content: center;
+        align-items: center;
+        img{
+            grid-area: img;
+            width: 90%;
+            margin-left: 1rem;
+        }
+        h1{
+            grid-area: main-h1;
+            text-align: center;
+            text-shadow: 1px 1px 1px black;
+            font-size: 50px;
+        }
+        p{
+            grid-area: p;
+            font-size: 1.4rem;
+            position: relative;
+            bottom: 25px;
+        }
+    }
+    /* footer */
+.redes{
+    width: 15%; 
+}
+}
+
+    /* MQ - Pantalla escritorio */
+
+@media screen and (min-width:1200px){
+
+        /* Animaciones de los botones del menu */
+    
+        .animacion-menu:hover{
+            background-color: $color-secundario;
+            box-shadow: 2px 2px 3px black;
+            transform: scale(1.1);
+        }
+    
+        .animacion-menu{
+            transition: 0s;
+        }
+    
+        .a-color:hover{
+            color: white;
+        }
+    
+        .menu{
+            gap: 1.5rem;
+        }
+    
+            /* MAIN */
+    
+    .la-quinta{
+        height: 70vh;
+        display: grid;
+        grid-template-columns:1fr 1fr ;
+        grid-template-rows:1fr 1fr ;
+        grid-template-areas: 
+            "img main-h1"
+            "img p";
+        justify-content: center;
+        align-items: center;
+        img{
+        grid-area: img;
+        width: 80%;
+        padding-bottom: 1.5rem;
+        }
+        h1{
+        grid-area: main-h1;
+        margin-right: 4rem;
+        text-align: center;
+        text-shadow: 1px 1px 1px black;
+        font-size: 3.5rem;
+        }
+        p{
+        grid-area: p;
+        margin-right: 3rem;
+        font-size: 1.8rem;
+        bottom: 45px;
+        }
+    }
+    
+    /*Animaciones del footer*/
+
+footer{
+    nav{
+        ul{
+            li{
+                a{
+                    .redes{
+                        width: 10%;
+                    }
+                    .redes:hover{
+                        filter: drop-shadow(1px 1px 2px black);
+                        transform:scale(1.1) 
+                    }
+                }
+            }
+        }
+    }
+}
+}
+
+    /* MQ - SERVICIOS */ 
+
+
+    @media screen and (min-width:768px){
+
+        /* Servicios - MAIN */
+
+        main{
+            .servicios{
+                @include grid-servicios;
+                .servicio-uno{
+                    @include servicio;
+                    grid-area: servicio-uno;
+                }
+                .servicio-uno:hover{
+                    @include servicio-hover;
+                }
+                .servicio-dos{
+                    @include servicio;
+                    grid-area: servicio-dos;
+                }
+                .servicio-dos:hover{
+                    @include servicio-hover;
+                }
+                .servicio-tres{
+                    @include servicio;
+                    grid-area: servicio-tres;
+                }
+                .servicio-tres:hover{
+                    @include servicio-hover;
+                }
+                .servicio-cuatro{
+                    @include servicio;
+                    grid-area: servicio-cuatro;
+                }
+                .servicio-cuatro:hover{
+                    @include servicio-hover;
+                }
+                .servicio-cinco{
+                    @include servicio;
+                    grid-area: servicio-cinco;
+                }
+                .servicio-cinco:hover{
+                    @include servicio-hover;
+                }
+                .servicio-seis{
+                    @include servicio;
+                    grid-area: servicio-seis;
+                }
+                .servicio-seis:hover{
+                    @include servicio-hover;
+                }
+                .servicio-siete{
+                    @include servicio;
+                    grid-area: servicio-siete;
+                }
+                .servicio-siete:hover{
+                    @include servicio-hover;
+                }
+                .servicio-ocho{
+                    @include servicio;
+                    grid-area: servicio-ocho;
+                }
+                .servicio-ocho:hover{
+                    @include servicio-hover;
+                }
+                .servicio-nueve{
+                    @include servicio;
+                    grid-area: servicio-nueve;
+                }
+                .servicio-nueve:hover{
+                    @include servicio-hover
+                }
+            }
+        }
+    }
+
+        /* MQ - FOTOS */
+
+@media screen and (min-width:1200px){
+       /*animacion de las fotos */
+
+        main{
+            div{
+                .foto{
+                    transition:0.5s ;
+                }
+                .foto:hover{
+                    transform: scale(1.1);
+                    transition: 0.5s;
+                }
+            }
+        }
+}
+
+    /* MQ - UBICACION - TABLET */
+
+    @media screen and (min-width:768px) {
+
+        main{
+            .ubicacion{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                .mapa{
+                    width: 500px;
+                    height: 400px;
+                    padding: 1rem
+                }
+            }
+            .p-mapa{
+                width: 500px;
+                font-size: 1.3rem;
+            }
+        }
+
+    }
+    
+    @media screen and (min-width:1200px){
+        main{
+            .ubicacion{
+                .mapa{
+                    width: 550px;
+                    height: 400px;
+                    padding: 1rem 
+                }
+                .p-mapa{
+                    width: 600px;
+                    padding: 1rem;
+                    font-size: 1.6rem;
+                }
+            }
+        }
+    }
+
+    /* MQ - CONTACTANOS */
+
+    @media screen and (maxs-width:576px){
+        main{
+            .descansa{
+                .texto{
+                    font-size: 20px;
+                }
+                .texto-2{
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width:768px) {
+        main{
+            .descansa{
+                .texto{
+                    font-size: 35px;
+                }
+                .texto-2{
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+
+
+

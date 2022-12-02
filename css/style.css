@@ -1,626 +1,337 @@
-/* reset */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Unna:wght@400;700&display=swap");
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+.contenedor {
+  height: 100vh; }
 
-.contenedor{
-    height: 100vh;
-}
-
-    /* estilos del body */
-
-body{
-    background-color: white;
-}
-
-    /* Estilos de HOME */
-
-    /* HEADER */
-
-.logo{
+/* HEADER */
+header {
+  background-color: #8b911a;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 15px; }
+  header .logo {
     width: 100px;
-    height: 100px;
-}
-
-header{
-    background-color: olive;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    padding: 15px;
-}
-
-header nav ul{
+    height: 100px; }
+  header nav ul {
     list-style: none;
     display: flex;
-    gap: 0.7rem;
-}
+    gap: 0.7rem; }
+    header nav ul li a {
+      color: white;
+      text-decoration: none; }
+      header nav ul li a .a-color {
+        color: black; }
 
-header nav ul li a{
-    color: white;
-    text-decoration: none;
-}
-.a-color{
-    color: black;
-}
-
-    /* MAIN */
-
-.la-quinta{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 1rem;
-    padding-top: 1.3rem;
-    gap: 1rem;
-}
-
-.la-quinta img{
-    width: 90%;
-}
-
-.la-quinta h1{
-    color:#525215;
+/* MAIN */
+.la-quinta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  padding-top: 1.3rem;
+  gap: 1rem; }
+  .la-quinta img {
+    width: 90%; }
+  .la-quinta h1 {
+    color: #525215;
     text-shadow: 1px 1px 1px black;
     font-family: 'Crimson Text', serif;
-    font-size: 40px;
-}
-
-.la-quinta p{
+    font-size: 45px;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Unna', serif; }
+  .la-quinta p {
     text-align: center;
     color: #5c483a;
-    font-size: 1.2rem;
-}
+    position: relative;
+    font-size: 1.4rem;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Unna', serif; }
 
-    /* FOOTER */
-
-
-footer nav ul{
-    background-color: olive;
-    display: flex;
-    list-style: none;
-
-}
-
-footer nav ul a{
+/* FOOTER */
+footer nav ul {
+  background-color: #8b911a;
+  display: flex;
+  list-style: none; }
+  footer nav ul li a {
     display: flex;
     justify-content: center;
-    padding: 0.7rem;
-}
-
-.redes{
-    width: 20%;
-}
-
-    /* MQ */
-
-@media screen and (min-width:768px){
-
-    /* MAIN */
-
-    .la-quinta{
-        height: 70vh;
-        display: grid;
-        grid-template-columns:1fr 1fr ;
-        grid-template-rows:1fr 1fr ;
-        grid-template-areas: 
-            "img main-h1"
-            "img p";
-        justify-content: center;
-        align-items: center;
-    }
-
-    .la-quinta img{
-        grid-area: img;
-        width: 90%;
-        margin-left: 2rem;
-    }
-
-    .la-quinta h1{
-        grid-area: main-h1;
-        text-align: center;
-        text-shadow: 1px 1px 1px black;
-    }
-
-    .la-quinta p{
-        grid-area: p;
-    }
-
-    .redes{
-        width: 15%; 
-    }
-}
-
-    /* MQ - Pantalla escritorio */
-
-@media screen and (min-width:1200px){
-
-    /* Animaciones de los botones del menu */
-
-    .animacion-menu:hover{
-        background-color: #525215;
-        box-shadow: 2px 2px 3px black;
-        transform: scale(1.1);
-    }
-
-    .animacion-menu{
-        transition: 0s;
-    }
-
-    .a-color:hover{
-        color: white;
-    }
-
-    .menu{
-        gap: 1.5rem;
-    }
-
-    /* MAIN */
-
-    .la-quinta{
-        height: 70vh;
-        display: grid;
-        grid-template-columns:1fr 1fr ;
-        grid-template-rows:1fr 1fr ;
-        grid-template-areas: 
-            "img main-h1"
-            "img p";
-        justify-content: center;
-        align-items: center;
-        }
-
-    .la-quinta img{
-        grid-area: img;
-        width: 80%;
-        padding-bottom: 1.5rem;
-    }
-
-    .la-quinta h1{
-        grid-area: main-h1;
-        margin-right: 4rem;
-        text-align: center;
-        text-shadow: 1px 1px 1px black;
-    }
-
-    .la-quinta p{
-        grid-area: p;
-        margin-right: 3rem;
-        font-size: 1.3rem;
-    }
-
-    /*Animaciones del footer*/
-
-    .redes:hover{
-        filter: drop-shadow(1px 1px 2px black);
-        transform:scale(1.1)
-    }
-
-    .redes{
-        width: 10%; 
-    }
-}
-
-
-
-    /* Estilos de SERVICIOS */
-
-.servicios{
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2rem;
-    padding: 2rem;
-}
-
-.servicio-uno{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-    background-color:#dbbf6b ;
-    width: 80%;
-    text-align: center;
-    font-size: 18px;
-    padding: 1.5rem;
-    border-radius: 20px;
-}
-
-.sala{
-    width: 25%;
-}
-
-.servicio-dos{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-    background-color:#dbbf6b ;
-    width: 80%;
-    text-align: center;
-    font-size: 18px;
-    padding: 1.5rem;
-    border-radius: 20px;
-}
-
-.comedor{
-    width: 25%;
-}
-
-.servicio-tres{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-    background-color:#dbbf6b ;
-    width: 80%;
-    text-align: center;
-    font-size: 18px;
-    padding: 1.5rem;
-    border-radius: 20px;
-}
-
-.estufa{
-    width: 25%;
-}
-
-.servicio-cuatro{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-    background-color:#dbbf6b ;
-    width: 80%;
-    text-align: center;
-    font-size: 18px;
-    padding: 1.5rem;
-    border-radius: 20px;
-}
-
-.cama{
-    width: 25%;
-}
-
-.servicio-cinco{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-    background-color:#dbbf6b ;
-    width: 80%;
-    text-align: center;
-    font-size: 18px;
-    padding: 1.5rem;
-    border-radius: 20px;
-}
-
-.tv{
-    width: 25%;
-}
-
-.servicio-seis{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-    background-color:#dbbf6b ;
-    width: 80%;
-    text-align: center;
-    font-size: 18px;
-    padding: 1.5rem;
-    border-radius: 20px;
-}
-
-.parking{
-    width: 25%;
-}
-
-.servicio-siete{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-    background-color:#dbbf6b ;
-    width: 80%;
-    text-align: center;
-    font-size: 18px;
-    padding: 1.5rem;
-    border-radius: 20px;
-}
-
-.parrilla{
-    width: 25%;
-}
-
-.servicio-ocho{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-    background-color:#dbbf6b ;
-    width: 80%;
-    text-align: center;
-    font-size: 18px;
-    padding: 1.5rem;
-    border-radius: 20px;
-}
-
-.fut-tennis{
-    width: 25%;
-}
-
-.servicio-nueve{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-    background-color:#dbbf6b ;
-    width: 80%;
-    text-align: center;
-    font-size: 18px;
-    padding: 1.5rem;    
-    border-radius: 20px;    
-}
-
-.piscina{
-    width: 25%;
-}
-
-    /* MQ - SERVICIOS */ 
-
-
-@media screen and (min-width:768px){
-
-    /* Servicios - MAIN */
-
-    .servicios{
-        display: grid;
-        grid-template-columns:1fr 1fr 1fr;
-        grid-template-rows:1fr 1fr 1fr ;
-
-        grid-template-areas: 
-        "servicio-uno servicio-dos servicio-tres"
-        "servicio-cuatro servicio-cinco servicio-seis"
-        "servicio-siete servicio-ocho servicio-nueve";
-        justify-content: center;
-        align-items: center;
-        padding: 3rem 0 3rem 3rem;
-    }
-
-    /* Animaciones del main */
-
-    .servicio-uno{
-        grid-area: servicio-uno;
-        font-size: 1rem;
-        transition: 0.1s;
-       
-    }
-
-    .servicio-uno:hover{
-        transform: scale(1.1);
-        transition: 0.2s;
-        box-shadow: 2px 2px 3px black;
-    }
-
-    .servicio-dos{
-        grid-area: servicio-dos;
-        font-size: 1rem;
-        transition: 0.1s;
-    }
-
-    .servicio-dos:hover{
-        transform: scale(1.1);
-        transition: 0.2s;
-        box-shadow: 2px 2px 3px black;
-    }
-
-    .servicio-tres{
-        grid-area: servicio-tres;
-        font-size: 1rem;
-        transition: 0.1s;
-    }
-
-    .servicio-tres:hover{
-        transform: scale(1.1);
-        transition: 0.2s;
-        box-shadow: 2px 2px 3px black;
-    }
-
-    .servicio-cuatro{
-        grid-area: servicio-cuatro;
-        font-size: 1rem;
-        transition: 0.1s;
-    }
-
-    .servicio-cuatro:hover{
-        transform: scale(1.1);
-        transition: 0.2s;
-        box-shadow: 2px 2px 3px black;
-    }
-
-    .servicio-cinco{
-        grid-area: servicio-cinco;
-        font-size: 1rem;
-        transition: 0.1s;
-    }
-
-    .servicio-cinco:hover{
-        transform: scale(1.1);
-        transition: 0.2s;
-        box-shadow: 2px 2px 3px black;
-    }
-
-    .servicio-seis{
-        grid-area: servicio-seis;
-        font-size: 1rem;
-        transition: 0.1s;
-    }
-
-    .servicio-seis:hover{
-        transform: scale(1.1);
-        transition: 0.2s;
-        box-shadow: 2px 2px 3px black;
-    }
-
-    .servicio-siete{
-        grid-area: servicio-siete;
-        font-size: 1rem;
-        transition: 0.1s;
-    }
-
-    .servicio-siete:hover{
-        transform: scale(1.1);
-        transition: 0.2s;
-        box-shadow: 2px 2px 3px black;
-    }
-
-    .servicio-ocho{
-        grid-area: servicio-ocho;
-        font-size: 1rem;
-        transition: 0.1s;
-    }
-
-    .servicio-ocho:hover{
-        transform: scale(1.1);
-        transition: 0.2s;
-        box-shadow: 2px 2px 3px black;
-    }
-
-    .servicio-nueve{
-        grid-area: servicio-nueve;
-        font-size: 1rem;
-        transition: 0.1s;
-    }
-
-    .servicio-nueve:hover{
-        transform: scale(1.1);
-        transition: 0.2s;
-        box-shadow: 2px 2px 3px black;
-    }
-}
-
-    /* UBICACION */
-
-.ubicacion{
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    align-items: center;
-    padding: 1rem;
-    padding-inline: 2rem;
-}
-
-.mapa1{
-    padding: 1rem 6rem 1rem 6rem; 
-}
-
-.p-mapa{
-    text-align: center;
-    color: #5c483a;
-    font-size: 1rem;
-}
-
-    /* MQ - Ubicacion */
-
-@media screen and (min-width:768px) {
-    .ubicacion{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
-
-    .mapa1{
-        width: 500px;
-        height: 400px;
-        padding: 1rem
-    }
-
-    .p-mapa{
-        width: 500px;
-        padding: 2rem;
-        font-size: 1.1rem;
-    }
-
-}
-
-@media screen and (min-width:1200px) {
-    .mapa1{
-        width: 600px;
-        height: 500px;
-        padding: 1rem
-    }
-
-    .p-mapa{
-        width: 600px;
-        padding: 2rem;
-        font-size: 1.3rem;
-    }
-}
-
-
-/* FOTOS */
-
-    /* MQ - FOTOS */
-
-@media screen and (min-width:1200px) {
-    
-    /*animacion de las fotos */
-
-
-.foto:hover{
-    transform: scale(1.1);
-    transition: 0.5s;
-}
-
-.foto{
-    transition:0.5s ;
-}
-}
-
-    
+    padding: 0.7rem; }
+    footer nav ul li a .redes {
+      width: 20%; }
+
+/* SERVICIOS */
+main .servicios {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  gap: 2rem;
+  padding: 2rem; }
+  main .servicios .servicio-uno .sala {
+    width: 25%; }
+  main .servicios .servicio-dos .comedor {
+    width: 25%; }
+  main .servicios .servicio-tres .estufa {
+    width: 25%; }
+  main .servicios .servicio-cuatro .cama {
+    width: 25%; }
+  main .servicios .servicio-cinco .tv {
+    width: 25%; }
+  main .servicios .servicio-seis .parking {
+    width: 25%; }
+  main .servicios .servicio-siete .parrilla {
+    width: 25%; }
+  main .servicios .servicio-ocho .fut-tennis {
+    width: 25%; }
+  main .servicios .servicio-nueve .piscina {
+    width: 25%; }
+
+main .servicios .servicio-uno, main .servicios .servicio-dos, main .servicios .servicio-tres, main .servicios .servicio-cuatro, main .servicios .servicio-cinco, main .servicios .servicio-seis, main .servicios .servicio-siete, main .servicios .servicio-ocho, main .servicios .servicio-nueve {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  background-color: #d2e880;
+  width: 80%;
+  text-align: center;
+  font-size: 18px;
+  padding: 1.5rem;
+  border-radius: 20px; }
+
+/* UBICACION */
+main .ubicacion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 1rem;
+  padding-inline: 2rem; }
+  main .ubicacion .mapa {
+    padding: 1rem 6rem 1rem 6rem; }
+
+main .p-mapa {
+  text-align: center;
+  color: #5c483a;
+  font-size: 1.3rem;
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Unna', serif; }
 
 /* CONTACTANOS */
+main .descansa {
+  background-image: url(../img/contactanos-1.jpg);
+  height: 90vh;
+  background-size: 100% 100%;
+  font-family: 'Unna', serif; }
+  main .descansa .texto {
+    font-size: 50px; }
+  main .descansa .texto-2 {
+    font-size: 35px; }
 
-.descansa{
-    background-image: url(../img/contactanos-1.jpg);
-    height: 90vh;
-    background-size: 100% 100%;
-    font-family: 'Unna', serif;
-}
+/* MQ HOME - TABLET */
+@media screen and (min-width: 768px) {
+  /* MAIN */
+  .la-quinta {
+    height: 60vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "img main-h1" "img p";
+    justify-content: center;
+    align-items: center; }
+    .la-quinta img {
+      grid-area: img;
+      width: 90%;
+      margin-left: 1rem; }
+    .la-quinta h1 {
+      grid-area: main-h1;
+      text-align: center;
+      text-shadow: 1px 1px 1px black;
+      font-size: 50px; }
+    .la-quinta p {
+      grid-area: p;
+      font-size: 1.4rem;
+      position: relative;
+      bottom: 25px; }
+  /* footer */
+  .redes {
+    width: 15%; } }
 
-.texto{
-    font-size: 50px;
-}
+/* MQ - Pantalla escritorio */
+@media screen and (min-width: 1200px) {
+  /* Animaciones de los botones del menu */
+  .animacion-menu:hover {
+    background-color: #525215;
+    box-shadow: 2px 2px 3px black;
+    transform: scale(1.1); }
+  .animacion-menu {
+    transition: 0s; }
+  .a-color:hover {
+    color: white; }
+  .menu {
+    gap: 1.5rem; }
+  /* MAIN */
+  .la-quinta {
+    height: 70vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "img main-h1" "img p";
+    justify-content: center;
+    align-items: center; }
+    .la-quinta img {
+      grid-area: img;
+      width: 80%;
+      padding-bottom: 1.5rem; }
+    .la-quinta h1 {
+      grid-area: main-h1;
+      margin-right: 4rem;
+      text-align: center;
+      text-shadow: 1px 1px 1px black;
+      font-size: 3.5rem; }
+    .la-quinta p {
+      grid-area: p;
+      margin-right: 3rem;
+      font-size: 1.8rem;
+      bottom: 45px; }
+  /*Animaciones del footer*/
+  footer nav ul li a .redes {
+    width: 10%; }
+  footer nav ul li a .redes:hover {
+    filter: drop-shadow(1px 1px 2px black);
+    transform: scale(1.1); } }
 
-.texto-2{
-    font-size: 35px;
-}
+/* MQ - SERVICIOS */
+@media screen and (min-width: 768px) {
+  /* Servicios - MAIN */
+  main .servicios {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "servicio-uno servicio-dos servicio-tres" "servicio-cuatro servicio-cinco servicio-seis" "servicio-siete servicio-ocho servicio-nueve";
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 0 3rem 3rem; }
+    main .servicios .servicio-uno {
+      font-size: 1rem;
+      transition: 0.1s;
+      grid-area: servicio-uno; }
+    main .servicios .servicio-uno:hover {
+      transform: scale(1.1);
+      transition: 0.2s;
+      box-shadow: 2px 2px 3px black; }
+    main .servicios .servicio-dos {
+      font-size: 1rem;
+      transition: 0.1s;
+      grid-area: servicio-dos; }
+    main .servicios .servicio-dos:hover {
+      transform: scale(1.1);
+      transition: 0.2s;
+      box-shadow: 2px 2px 3px black; }
+    main .servicios .servicio-tres {
+      font-size: 1rem;
+      transition: 0.1s;
+      grid-area: servicio-tres; }
+    main .servicios .servicio-tres:hover {
+      transform: scale(1.1);
+      transition: 0.2s;
+      box-shadow: 2px 2px 3px black; }
+    main .servicios .servicio-cuatro {
+      font-size: 1rem;
+      transition: 0.1s;
+      grid-area: servicio-cuatro; }
+    main .servicios .servicio-cuatro:hover {
+      transform: scale(1.1);
+      transition: 0.2s;
+      box-shadow: 2px 2px 3px black; }
+    main .servicios .servicio-cinco {
+      font-size: 1rem;
+      transition: 0.1s;
+      grid-area: servicio-cinco; }
+    main .servicios .servicio-cinco:hover {
+      transform: scale(1.1);
+      transition: 0.2s;
+      box-shadow: 2px 2px 3px black; }
+    main .servicios .servicio-seis {
+      font-size: 1rem;
+      transition: 0.1s;
+      grid-area: servicio-seis; }
+    main .servicios .servicio-seis:hover {
+      transform: scale(1.1);
+      transition: 0.2s;
+      box-shadow: 2px 2px 3px black; }
+    main .servicios .servicio-siete {
+      font-size: 1rem;
+      transition: 0.1s;
+      grid-area: servicio-siete; }
+    main .servicios .servicio-siete:hover {
+      transform: scale(1.1);
+      transition: 0.2s;
+      box-shadow: 2px 2px 3px black; }
+    main .servicios .servicio-ocho {
+      font-size: 1rem;
+      transition: 0.1s;
+      grid-area: servicio-ocho; }
+    main .servicios .servicio-ocho:hover {
+      transform: scale(1.1);
+      transition: 0.2s;
+      box-shadow: 2px 2px 3px black; }
+    main .servicios .servicio-nueve {
+      font-size: 1rem;
+      transition: 0.1s;
+      grid-area: servicio-nueve; }
+    main .servicios .servicio-nueve:hover {
+      transform: scale(1.1);
+      transition: 0.2s;
+      box-shadow: 2px 2px 3px black; } }
 
-    /* MQ - CONTACTANOS */
+/* MQ - FOTOS */
+@media screen and (min-width: 1200px) {
+  /*animacion de las fotos */
+  main div .foto {
+    transition: 0.5s; }
+  main div .foto:hover {
+    transform: scale(1.1);
+    transition: 0.5s; } }
 
-@media screen and (maxs-width:576px){
-    .texto{
-        font-size: 20px;
-    }
+/* MQ - UBICACION - TABLET */
+@media screen and (min-width: 768px) {
+  main .ubicacion {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+    main .ubicacion .mapa {
+      width: 500px;
+      height: 400px;
+      padding: 1rem; }
+  main .p-mapa {
+    width: 500px;
+    font-size: 1.3rem; } }
 
-    .texto-2{
-        font-size: 10px;
-    }
-}
+@media screen and (min-width: 1200px) {
+  main .ubicacion .mapa {
+    width: 550px;
+    height: 400px;
+    padding: 1rem; }
+  main .ubicacion .p-mapa {
+    width: 600px;
+    padding: 1rem;
+    font-size: 1.6rem; } }
 
-@media screen and (max-width:768px){
-    .texto{
-        font-size: 35px;
-    }
+/* MQ - CONTACTANOS */
+@media screen and (maxs-width: 576px) {
+  main .descansa .texto {
+    font-size: 20px; }
+  main .descansa .texto-2 {
+    font-size: 10px; } }
 
-    .texto-2{
-        font-size: 20px;
-    }
-}
-
-
-
-
+@media screen and (max-width: 768px) {
+  main .descansa .texto {
+    font-size: 35px; }
+  main .descansa .texto-2 {
+    font-size: 20px; } }
