@@ -111,16 +111,18 @@ main .ubicacion {
   align-items: center;
   gap: 2rem;
   padding: 1rem;
-  padding-inline: 2rem; }
+  padding-inline: 1.5rem; }
   main .ubicacion .mapa {
-    padding: 1rem 6rem 1rem 6rem; }
+    padding: 1rem 4rem 0rem 4rem;
+    margin-right: 1.3rem; }
 
 main .p-mapa {
   text-align: center;
   color: #5c483a;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-family: 'Roboto', sans-serif;
-  font-family: 'Unna', serif; }
+  font-family: 'Unna', serif;
+  padding: 1rem; }
 
 /* CONTACTANOS */
 main .descansa {
@@ -129,9 +131,9 @@ main .descansa {
   background-size: 100% 100%;
   font-family: 'Unna', serif; }
   main .descansa .texto {
-    font-size: 50px; }
-  main .descansa .texto-2 {
     font-size: 35px; }
+  main .descansa .texto-2 {
+    font-size: 20px; }
 
 /* MQ HOME - TABLET */
 @media screen and (min-width: 768px) {
@@ -324,14 +326,8 @@ main .descansa {
     font-size: 1.6rem; } }
 
 /* MQ - CONTACTANOS */
-@media screen and (maxs-width: 576px) {
+@media screen and (min-width: 768px) {
   main .descansa .texto {
-    font-size: 20px; }
+    font-size: 50px; }
   main .descansa .texto-2 {
-    font-size: 10px; } }
-
-@media screen and (max-width: 768px) {
-  main .descansa .texto {
-    font-size: 35px; }
-  main .descansa .texto-2 {
-    font-size: 20px; } }
+    font-size: 35px; } }

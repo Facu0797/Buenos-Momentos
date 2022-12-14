@@ -5,16 +5,19 @@ main{
         @include flex-column;
         gap: 2rem;
         padding: 1rem;
-        padding-inline: 2rem;
+        padding-inline: 1.5rem;
         .mapa{
-            padding: 1rem 6rem 1rem 6rem; 
+            padding: 1rem 4rem 0rem 4rem;
+            margin-right: 1.3rem;
+
         }
     }
     .p-mapa{
         text-align: center;
         color: $color-texto;
-        font-size: 1.3rem;
+        font-size: 1.2rem;
         font-family: 'Roboto', sans-serif;
         font-family: 'Unna', serif;
+        padding: 1rem;
     }
 }
